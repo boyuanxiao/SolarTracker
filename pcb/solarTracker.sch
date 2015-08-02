@@ -35,6 +35,7 @@ LIBS:photodiode
 LIBS:stm32f100c8t6b
 LIBS:stm32f071cbt6
 LIBS:74hc4052
+LIBS:servo
 LIBS:solarTracker-cache
 EELAYER 25 0
 EELAYER END
@@ -438,4 +439,15 @@ Wire Wire Line
 	3200 5550 2225 5550
 Text Notes 3375 5625 0    60   ~ 0
 Order number for the through hole TI chip
+$Comp
+L Servo S?
+U 1 1 55BE7FEA
+P 9700 5025
+F 0 "S?" H 9700 5025 60  0000 C CNN
+F 1 "Servo" H 9700 5025 60  0000 C CNN
+F 2 "" H 9700 5025 60  0000 C CNN
+F 3 "" H 9700 5025 60  0000 C CNN
+	1    9700 5025
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

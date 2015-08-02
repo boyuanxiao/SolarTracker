@@ -1,4 +1,4 @@
-update=Sat 01 Aug 2015 15:12:11 BST
+update=Sun 02 Aug 2015 21:24:48 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,4 @@ LibName33=library/photodiode
 LibName34=library/stm32f100c8t6b
 LibName35=library/stm32f071cbt6
 LibName36=library/74hc4052
+LibName37=library/servo
