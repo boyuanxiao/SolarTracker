@@ -36,6 +36,7 @@ LIBS:stm32f100c8t6b
 LIBS:stm32f071cbt6
 LIBS:74hc4052
 LIBS:servo
+LIBS:mc33063a
 LIBS:solarTracker-cache
 EELAYER 25 0
 EELAYER END
