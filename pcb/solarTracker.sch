@@ -38,6 +38,7 @@ LIBS:74hc4052
 LIBS:servo
 LIBS:mc33063a
 LIBS:adp3335
+LIBS:swd
 LIBS:solarTracker-cache
 EELAYER 25 0
 EELAYER END
@@ -580,6 +581,50 @@ F 3 "" H 8200 1675 30  0000 C CNN
 	1    8200 1675
 	0    1    1    0   
 $EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 55CC1EAA
+P 9125 900
+F 0 "L?" V 9075 900 50  0000 C CNN
+F 1 "INDUCTOR" V 9225 900 50  0000 C CNN
+F 2 "" H 9125 900 60  0000 C CNN
+F 3 "" H 9125 900 60  0000 C CNN
+	1    9125 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SWD U?
+U 1 1 55CEB401
+P 1700 1800
+F 0 "U?" V 1700 1800 60  0000 C CNN
+F 1 "SWD" V 1600 1800 60  0000 C CNN
+F 2 "" H 1600 2100 60  0000 C CNN
+F 3 "" H 1600 2100 60  0000 C CNN
+	1    1700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 55CEB674
+P 925 1325
+F 0 "#PWR?" H 925 1175 50  0001 C CNN
+F 1 "+3V3" H 925 1465 50  0000 C CNN
+F 2 "" H 925 1325 60  0000 C CNN
+F 3 "" H 925 1325 60  0000 C CNN
+	1    925  1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55CEB7B4
+P 900 2075
+F 0 "#PWR?" H 900 1825 50  0001 C CNN
+F 1 "GND" H 900 1925 50  0000 C CNN
+F 2 "" H 900 2075 60  0000 C CNN
+F 3 "" H 900 2075 60  0000 C CNN
+	1    900  2075
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	9950 1125 9950 1275
 Wire Wire Line
@@ -889,23 +934,8 @@ Wire Wire Line
 Connection ~ 7950 1575
 Wire Wire Line
 	10250 1125 10250 1125
-$Comp
-L INDUCTOR L?
-U 1 1 55CC1EAA
-P 9125 900
-F 0 "L?" V 9075 900 50  0000 C CNN
-F 1 "INDUCTOR" V 9225 900 50  0000 C CNN
-F 2 "" H 9125 900 60  0000 C CNN
-F 3 "" H 9125 900 60  0000 C CNN
-	1    9125 900 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	8825 900  8350 900 
-Wire Wire Line
-	8350 900  8350 900 
-Wire Wire Line
-	8350 900  7950 900 
+	7950 900  8825 900 
 Connection ~ 7950 900 
 Wire Wire Line
 	9825 900  9825 1675
@@ -913,4 +943,80 @@ Connection ~ 9825 1675
 Connection ~ 9825 900 
 Wire Wire Line
 	9825 900  9425 900 
+Wire Wire Line
+	925  1325 925  1600
+Wire Wire Line
+	925  1600 1100 1600
+Wire Wire Line
+	1100 1700 900  1700
+Wire Wire Line
+	900  1700 900  1800
+Wire Wire Line
+	900  1800 900  2000
+Wire Wire Line
+	900  2000 900  2075
+Wire Wire Line
+	1100 1800 900  1800
+Connection ~ 900  1800
+Wire Wire Line
+	900  2000 1100 2000
+Connection ~ 900  2000
+Text Label 2300 2000 0    60   ~ 0
+nRST
+NoConn ~ 2300 1800
+NoConn ~ 2300 1900
+Text Label 2300 1600 0    60   ~ 0
+SWDIO
+Text Label 2300 1700 0    60   ~ 0
+SWDCLK
+Text Label 9050 3325 0    60   ~ 0
+nRST
+Wire Wire Line
+	8300 3500 8600 3500
+Wire Wire Line
+	8600 3500 8600 3325
+Wire Wire Line
+	8600 3325 8900 3325
+Wire Wire Line
+	8900 3325 9050 3325
+Wire Wire Line
+	8300 3600 8600 3600
+$Comp
+L GND #PWR?
+U 1 1 55CEC84D
+P 8900 3750
+F 0 "#PWR?" H 8900 3500 50  0001 C CNN
+F 1 "GND" H 8900 3600 50  0000 C CNN
+F 2 "" H 8900 3750 60  0000 C CNN
+F 3 "" H 8900 3750 60  0000 C CNN
+	1    8900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 55CEC8AF
+P 8900 3500
+F 0 "C?" H 8925 3600 50  0000 L CNN
+F 1 "C" H 8925 3400 50  0000 L CNN
+F 2 "" H 8938 3350 30  0000 C CNN
+F 3 "" H 8900 3500 60  0000 C CNN
+	1    8900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3350 8900 3325
+Connection ~ 8900 3325
+Wire Wire Line
+	8900 3650 8900 3700
+Wire Wire Line
+	8900 3700 8900 3750
+Wire Wire Line
+	8600 3600 8600 3700
+Wire Wire Line
+	8600 3700 8900 3700
+Connection ~ 8900 3700
+Text Label 8300 4400 0    60   ~ 0
+SWDIO
+Text Label 8300 4500 0    60   ~ 0
+SWCLK
 $EndSCHEMATC
