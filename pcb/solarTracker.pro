@@ -1,4 +1,4 @@
-update=Fri 14 Aug 2015 22:37:12 BST
+update=Fri 28 Aug 2015 22:40:54 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,4 @@ LibName37=library/servo
 LibName38=library/mc33063a
 LibName39=library/adp3335
 LibName40=library/swd
+LibName41=library/lm2577
