@@ -39,6 +39,7 @@ LIBS:servo
 LIBS:mc33063a
 LIBS:adp3335
 LIBS:swd
+LIBS:lm2577
 LIBS:solarTracker-cache
 EELAYER 25 0
 EELAYER END
