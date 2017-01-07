@@ -103,13 +103,14 @@ F 3 "" H 3475 3925 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM324N U7
+L LM324N-RESCUE-solarTracker U7
 U 1 1 55BD9ED5
 P 4100 3225
 AR Path="/55BDA44F/55BD9ED5" Ref="U7"  Part="1" 
 AR Path="/55BD9D56/55BD9ED5" Ref="U4"  Part="1" 
 AR Path="/55BDA313/55BD9ED5" Ref="U4"  Part="3" 
 AR Path="/55BDA511/55BD9ED5" Ref="U7"  Part="3" 
+AR Path="/55BD9ED5" Ref="U4"  Part="1" 
 F 0 "U4" H 4150 3425 60  0000 C CNN
 F 1 "LM324N" H 4250 3025 50  0000 C CNN
 F 2 "" H 4100 3225 60  0000 C CNN
@@ -345,13 +346,14 @@ Connection ~ 7250 3325
 Text Notes 2850 4275 0    60   ~ 0
 output from first amp proportional to the photocurrent
 $Comp
-L LM324N U7
+L LM324N-RESCUE-solarTracker U7
 U 2 1 55BDFBFD
 P 6700 3325
 AR Path="/55BDA44F/55BDFBFD" Ref="U7"  Part="2" 
 AR Path="/55BD9D56/55BDFBFD" Ref="U4"  Part="2" 
 AR Path="/55BDA313/55BDFBFD" Ref="U4"  Part="4" 
 AR Path="/55BDA511/55BDFBFD" Ref="U7"  Part="4" 
+AR Path="/55BDFBFD" Ref="U4"  Part="2" 
 F 0 "U4" H 6750 3525 60  0000 C CNN
 F 1 "LM324N" H 6850 3125 50  0000 C CNN
 F 2 "" H 6700 3325 60  0000 C CNN
