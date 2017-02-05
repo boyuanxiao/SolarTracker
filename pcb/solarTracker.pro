@@ -1,4 +1,4 @@
-update=Sat 29 Oct 2016 11:40:11 BST
+update=Sun 22 Jan 2017 12:07:56 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -70,3 +70,4 @@ LibName38=library/mc33063a
 LibName39=library/adp3335
 LibName40=library/swd
 LibName41=library/lm2577
+LibName42=library/lm2596

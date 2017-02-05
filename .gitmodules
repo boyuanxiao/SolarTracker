@@ -1,0 +1,9 @@
+[submodule "ChibiOS-Servo"]
+	path = ChibiOS-Servo
+	url = https://github.com/BouchkatiTarek/ChibiOS-Servo.git
+[submodule "firmware/ChibiOS-Servo"]
+	path = firmware/ChibiOS-Servo
+	url = https://github.com/BouchkatiTarek/ChibiOS-Servo.git
+[submodule "firmware/ChibiOS"]
+	path = firmware/ChibiOS
+	url = https://github.com/ChibiOS/ChibiOS.git
